@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+/* Font */
+h3 {
+    font-family: 'Poor Story', cursive;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("../static/wave.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 250%;
+}
+
+form {
+    opacity: .85;
+    background: white;
+}
+
+@media (max-width: 590px) {
+  .form-check {
+    min-width: 60%; !important;
+  }
+}

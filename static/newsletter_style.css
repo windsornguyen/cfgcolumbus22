@@ -1,0 +1,36 @@
+form {
+    border: 10px solid #f1f1f1;
+  }
+  
+  /* Adding Padding to Containers */
+  .container 
+  {
+    padding: 15px;
+    background-color: #29a489;
+  }
+  
+  /* Styling for input elements and the Submit Button */
+  input[type=text], input[type=submit] 
+  {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=checkbox]
+  {
+    margin-top: 30px;
+  }
+  input[type=submit] 
+  {
+    background-color: #2c6aad;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover 
+  {
+    opacity: 1;
+  }

@@ -1,0 +1,15 @@
+<form>
+    <div class="container">
+      <h2>T3 NewsLetter</h2>
+    </div>
+    <link rel="stylesheet" href="../static/newsletter_style.css">
+    <div class="container" >
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+      <input type="text" placeholder="Enter Email address" name="mail" required>
+ 
+    </div>
+  
+    <div class="container">
+        <button type="submit" href="{{ url_for('news2') }}" value="Subscribe to Our NewsLetter"></button>
+    </div>
+  </form>

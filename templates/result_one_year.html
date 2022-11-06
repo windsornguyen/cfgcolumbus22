@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/res.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+<body>
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg bg-light shadow" style="background-color: #29A489"; !important;>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('home') }}">
+        <img src="../static/logo.jpg" alt="" class="img-fluid" style="max-height: 2.5rem;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="{{ url_for('home') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;"><strong>Home</strong></a>
+        <a class="nav-link" href="{{ url_for('welcome') }}" style="font-family: Roboto, Helvetica, Arial, sans-serif;"><strong>Quiz</strong></a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Lil Roadmap -->
+<h1 class="my-4 text-center">Based on your profile....</h1>
+
+<div class="container">
+    <div class="row border shadow">
+        <div class="col-md-4 d-flex align-items-center justify-content-center" id="r1">
+            <div class="h-25 my-auto text-white"><strong>Financial Aid</strong></div>
+        </div>
+
+        <div class="col-md-8 h-25 my-auto text-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Learn more!
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body container">
+                      <table>
+                        <tr>
+                          <th class="table-head">Financial Aid</th>
+                          <th class="table-head">Link</th>
+                          <th class="table-head">Note</th>
+                        </tr>
+                        <tr>
+                          <td>Federal Application for Federal Student Aid (FAFSA)</td>
+                          <td><a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank">Apply for FAFSA!</a></td>
+                          <td>Opens October 1st</td>
+                        </tr>
+                        <tr>
+                          <td>Texas Application for State Financial Aid (TASFA)</td>
+                          <td><a href="http://www.collegeforalltexans.com/index.cfm?objectid=A3119543-CBF8-C202-F1B0EEFD5F4B9805" target="_blank">Apply for TAFSA!</a></td>
+                          <td>Opens October 1st</td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row border shadow">
+        <div class="col-md-4 d-flex align-items-center justify-content-center" id="r15">
+            <div class="h-25 my-auto text-white"><strong>Scholarships</strong></div>
+        </div>
+
+        <div class="col-md-8 h-25 my-auto text-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample3">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Learn more!
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample3">
+                  <div class="accordion-body">
+                      <table>
+                        <tr>
+                          <th class="table-head">Scholarships</th>
+                          <th class="table-head">Link</th>
+                          <th class="table-head">Note</th>
+                        </tr>
+                        <tr>
+                          <td>FWISD Scholarships</td>
+                          <td><a href="https://www.fwisd.org/Page/2509" target="_blank">FWISD Scholarships!</a></td>
+                          <td>Resources per grade level</td>
+                        </tr>
+                        <tr>
+                          <td>RaiseMe</td>
+                          <td><a href="https://www.raise.me" target="_blank">RaiseMe Scholarships!</a></td>
+                          <td>Micro-scholarships and small grants</td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row border shadow">
+        <div class="col-md-4 d-flex align-items-center justify-content-center" id="r2">
+            <div class="h-25 my-auto text-white"><strong>Mentorships</strong></div>
+        </div>
+
+        <div class="col-md-8 h-25 my-auto text-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Learn more!
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                  <div class="accordion-body container">
+                      <table>
+                        <tr>
+                          <th class="table-head">Mentors</th>
+                          <th class="table-head">Introduction</th>
+                          <th class="table-head">Email</th>
+                        </tr>
+                        <tr>
+                          <td>Noa Marianela</td>
+                          <td><a href="https://www.behindthename.com/random/random.php?gender=f&number=2&sets=1&surname=&showextra=yes&usage_spa=1" target="_blank"> Meet Noa!</a></a></td>
+                          <td>noa@t3partnership.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ani Yasmin</td>
+                            <td><a href="https://www.behindthename.com/random/random.php?gender=f&number=2&sets=1&surname=&showextra=yes&usage_spa=1" target="_blank"> Meet Ani!</a></a></td>
+                            <td>ani@t3partnership.com</td>
+                          </tr>
+                          <tr>
+                            <td>Nieve Eulalia</td>
+                            <td><a href="https://www.behindthename.com/random/random.php?gender=f&number=2&sets=1&surname=&showextra=yes&usage_spa=1" target="_blank"> Meet Nieve!</a></a></td>
+                            <td>nieve@t3partnership.com</td>
+                          </tr>
+                      </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row border shadow">
+        <div class="col-md-4 d-flex align-items-center justify-content-center" id="r3">
+            <div class="h-25 my-auto text-white"><strong>Testimonials</strong></div>
+        </div>
+
+        <div class="col-md-8 h-25 my-auto text-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample4">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Learn more!
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample4">
+                  <div class="accordion-body">
+                      <table>
+                        <tr>
+                          <th class="table-head">Student</th>
+                          <th class="table-head">Testimonial</th>
+                        </tr>
+                        <tr>
+                          <td>John Smith</td>
+                          <td><a href="https://www.behindthename.com/random/random.php?gender=f&number=2&sets=1&surname=&showextra=yes&usage_spa=1" target="_blank"> John's Story</a></a></td>
+                        </tr>
+                        <tr>
+                            <td>Matt Brown</td>
+                            <td><a href="https://www.behindthename.com/random/random.php?gender=f&number=2&sets=1&surname=&showextra=yes&usage_spa=1" target="_blank"> Matt's Story</a></a></td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row border shadow">
+
+        <div class="col-md-4 d-flex align-items-center justify-content-center" id="r4">
+            <div class="h-25 my-auto text-white"><strong>Certifications</strong></div>
+        </div>
+
+        <div class="col-md-8 h-25 my-auto text-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample5">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Learn more!
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample5">
+                  <div class="accordion-body">
+                    {{ schools.to_html(escape=False, index=False, columns=["Opportunity/Institution", "Cost of program", "Average Salary Outcome", "Opportunity", "City ",	"Size", "Pub or Private", "Industry "]) | safe}}
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+</html>
